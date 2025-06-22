@@ -10,7 +10,7 @@ import { BrowserRouter } from "react-router-dom";
 import RouterElement from "./RouterElement";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
-  <BrowserRouter basename="/" >
+  <BrowserRouter basename="/kamataahOnline" >
     <RouterElement />
   </BrowserRouter>
 );
