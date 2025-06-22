@@ -4894,8 +4894,8 @@ ul {
 
 /* line 43, /Applications/MAMP/htdocs/palash/cl/august 2019/202. Shop/202 shop html/sass/_new_arrival.scss */
 .new_arrival .new_arrival_iner .weidth_1 {
-    flex: 39% 0 0;
-    max-width: 39%;
+    flex: 30% 0 0;
+    max-width: 30%;
 }
 
 @media (max-width: 576px) {
@@ -5062,7 +5062,7 @@ ul {
 
 /* line 156, /Applications/MAMP/htdocs/palash/cl/august 2019/202. Shop/202 shop html/sass/_new_arrival.scss */
 .new_arrival .single_arrivel_item:hover .hover_text {
-    top: 31%;
+    top: 15%;
     opacity: 1;
     visibility: visible;
 }
