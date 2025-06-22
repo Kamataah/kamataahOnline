@@ -1,7 +1,8 @@
 {
-  "name": "bajaj-deeveloper-portal",
+  "name": "kamataahonline",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://kamataah.github.io/kamataahOnline",
   "dependencies": {
     "@babel/runtime": "^7.26.10",
     "axios": "^1.7.9",
@@ -35,7 +36,6 @@
     "preview": "vite preview",
     "deploy": "npm run build && gh-pages -d dist"
   },
-  "homepage": "https://kamataah.github.io/kamataahOnline",
   "eslintConfig": {
     "extends": [
       "react-app",
