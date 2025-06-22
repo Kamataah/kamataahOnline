@@ -35,7 +35,7 @@
     "preview": "vite preview",
     "deploy": "npm run build && gh-pages -d dist"
   },
-  "homepage": "https://kamataah.com",
+  "homepage": "https://kamataah.github.io/kamataahOnline",
   "eslintConfig": {
     "extends": [
       "react-app",
