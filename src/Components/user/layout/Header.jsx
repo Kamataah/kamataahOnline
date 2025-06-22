@@ -2,12 +2,12 @@ import { Link } from "react-router-dom"
 
 function Header() {
     return (
-        <header className="main_menu home_menu">
+        <header className="main_menu home_menu header-area">
             <div className="container-fluid">
                 <div className="row align-items-center justify-content-center">
                     <div className="col-lg-11">
                         <nav className="navbar navbar-expand-lg navbar-light">
-                            <Link to="/" className="navbar-brand"> <img src="/assets/img/logo_s.png" alt="logo" /> </Link>
+                            <Link to="/" className="navbar-brand"> <img src="/assets/img/combo.png" alt="logo" /> </Link>
                             <button className="navbar-toggler" type="button" data-toggle="collapse"
                                 data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                                 aria-expanded="false" aria-label="Toggle navigation">

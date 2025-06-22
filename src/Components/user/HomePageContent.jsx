@@ -1,6 +1,9 @@
 function HomePageContent() {
     return (
         <div className="main-content row g-0 gap-3">
+            {/* <blockquote className="instagram-media" data-instgrm-permalink="https://www.instagram.com/_kamataah_/" data-instgrm-version="14" >
+            </blockquote>
+            <script async src="//www.instagram.com/embed.js"></script> */}
             <section className="">
                 <div className="container">
                     <div className="row align-items-center">
@@ -9,7 +12,7 @@ function HomePageContent() {
                                 <div className="single_banner_slider">
                                     <div className="banner_text">
                                         <div className="banner_text_iner">
-                                            
+
                                         </div>
                                     </div>
                                 </div>
@@ -20,7 +23,7 @@ function HomePageContent() {
                                 <div className="single_banner_slider">
                                     <div className="banner_text">
                                         <div className="banner_text_iner">
-                                            
+
                                         </div>
                                     </div>
                                 </div>
