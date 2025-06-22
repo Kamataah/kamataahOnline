@@ -1,14 +1,26 @@
 function HomePageContent() {
     return (
         <div className="main-content row g-0 gap-3">
-            <section className="banner_part">
+            <section className="">
                 <div className="container">
                     <div className="row align-items-center">
-                        <div className="col-lg-7">
+                        <div className="col-6 banner_part_1">
                             <div className="banner_slider">
                                 <div className="single_banner_slider">
                                     <div className="banner_text">
                                         <div className="banner_text_iner">
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col-6 banner_part">
+                            <div className="banner_slider">
+                                <div className="single_banner_slider">
+                                    <div className="banner_text">
+                                        <div className="banner_text_iner">
+                                            
                                         </div>
                                     </div>
                                 </div>
