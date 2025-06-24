@@ -1,21 +1,22 @@
+import { Link } from "react-router-dom";
+import { arrayIndex, productList } from "../../Utils";
+
 function HomePageContent() {
     return (
-        <div className="main-content row g-0 gap-3">
-            {/* <blockquote className="instagram-media" data-instgrm-permalink="https://www.instagram.com/_kamataah_/" data-instgrm-version="14" >
-            </blockquote>
-            <script async src="//www.instagram.com/embed.js"></script> */}
+        <div className="main-content row g-0 gap-3 mx-2">
+            <div className="my-3 welcome_title">
+                <h1>Welcome To,</h1>
+                <h1>Kamataah Desirable drapes</h1>
+            </div>
             <section className="">
                 <div className="container">
                     <div className="row align-items-center">
-                        <div className="col-6 banner_part_1">
-                            <div className="banner_slider">
-                                <div className="single_banner_slider">
-                                    <div className="banner_text">
-                                        <div className="banner_text_iner">
-
-                                        </div>
-                                    </div>
-                                </div>
+                        <div className="col-6">
+                            <div className="intro-section">
+                                <h1>Welcome to Our Handcrafted Heritage Store</h1>
+                                <p>
+                                    Discover the timeless elegance of <span>Chikankari artistry</span> and the rich tradition of <span>handloom sarees</span>. We take pride in offering a curated collection of <span>handcrafted and handwoven products</span>, celebrating the skills of Indian artisans. Each piece in our collection reflects authenticity, craftsmanship, and cultural heritage — perfect for those who value quality and tradition.
+                                </p>
                             </div>
                         </div>
                         <div className="col-6 banner_part">
@@ -32,119 +33,121 @@ function HomePageContent() {
                     </div>
                 </div>
             </section>
-            <section className="feature_part pt-4">
+            <section className="feature_part py-4 box-shadow">
+                <div className="my-3">
+                    <h1 className="gradientThemeColor titleHeading text-center">Our Product Category</h1>
+                </div>
                 <div className="container-fluid p-lg-0 overflow-hidden">
                     <div className="row align-items-center justify-content-between">
                         <div className="col-lg-4 col-sm-6">
                             <div className="single_feature_post_text">
-                                <img src="/assets/img/logo.png" alt="#" />
+                                <img src="/assets/collection/c_kari.jpeg" alt="#" style={{ height: '607px', width: '429px' }} />
                                 <div className="hover_text">
-                                    <a href="single-product.html" className="btn_2">Kurta</a>
+                                    <span className="btn_2">Chinkan kari</span>
                                 </div>
                             </div>
                         </div>
                         <div className="col-lg-4 col-sm-6">
                             <div className="single_feature_post_text">
-                                <img src="/assets/img/logo.png" alt="#" />
+                                <img src="/assets/collection/handloom.jpeg" alt="#" style={{ height: '607px', width: '429px' }} />
                                 <div className="hover_text">
-                                    <a href="single-product.html" className="btn_2">Saree</a>
+                                    <span className="btn_2">Hadloom Saree</span>
                                 </div>
                             </div>
                         </div>
                         <div className="col-lg-4 col-sm-6">
                             <div className="single_feature_post_text">
-                                <img src="/assets/img/logo.png" alt="#" />
+                                <img src="/assets/collection/handcraeft.jpg" alt="#" style={{ height: '607px', width: '429px' }} />
                                 <div className="hover_text">
-                                    <a href="single-product.html" className="btn_2">Western</a>
+                                    <span className="btn_2">Handcrafted Saree</span>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
-            <section className="new_arrival section_padding">
+            <section className="new_arrival box-shadow my-3">
                 <div className="container-fluid">
                     <div className="row">
+                        <h1 className="gradientThemeColor titleHeading text-center">Products For You</h1>
+                        <div className="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-xs-12 d-none">
+                            <select className="form-select" name="" id="">
+                                <option value="">Select Category</option>
+                                <option value="1">Chinkan kari</option>
+                                <option value="2">Hadloom Saree</option>
+                                <option value="3">Handcrafted Saree</option>
+                            </select>
+                        </div>
                         <div className="col-lg-12">
                             <div className="new_arrival_iner filter-container">
-                                <div className="single_arrivel_item weidth_1 mix shoes">
-                                    <img src="/assets/img/logo.png" alt="#" />
-                                    <div className="hover_text">
-                                        <p>Canvas</p>
-                                        <h5>Lorem Canvas Low-Top Sneaker</h5>
-                                        <div className="rate_icon">
-                                            <a href="#"> <i className="fas fa-star"></i> </a>
-                                            <a href="#"> <i className="fas fa-star"></i> </a>
-                                            <a href="#"> <i className="fas fa-star"></i> </a>
-                                            <a href="#"> <i className="fas fa-star"></i> </a>
-                                            <a href="#"> <i className="fas fa-star"></i> </a>
+
+                                {
+                                    productList.map((item, index) => (
+                                        <div key={arrayIndex('product', index)} className="single_arrivel_item weidth_1 mix shoes">
+                                            <img src={item.image} alt="#" style={{ width: '14em', height: '16em' }} />
+                                            <div className="hover_text">
+                                                <p>{item.category}</p>
+                                                <h5>{item.name}</h5>
+                                                <div className="rate_icon">
+                                                    {
+                                                        Array.from({ length: 5 }, (_, i) => (
+                                                            <span key={i}>
+                                                                {i + 1 <= item.startRating ? <i className="fas fa-star"></i> : <span> <i className="fa-regular fa-star"></i></span>}
+                                                            </span>
+                                                        ))
+                                                    }
+                                                </div>
+                                                <h6>{item.price}</h6>
+                                                <div className="social_icon">
+                                                    <Link><i className="fas fa-heart"></i></Link>
+                                                    <Link><i className="fa-solid fa-cart-shopping"></i></Link>
+                                                </div>
+                                            </div>
                                         </div>
-                                        <h6>$150</h6>
-                                        <div className="social_icon">
-                                            <a href="#"><i className="ti-heart"></i></a>
-                                            <a href="#"><i className="ti-bag"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="single_arrivel_item weidth_1 mix shoes">
-                                    <img src="/assets/img/logo.png" alt="#" />
-                                    <div className="hover_text">
-                                        <p>Canvas</p>
-                                        <h5>Lorem Canvas Low-Top Sneaker</h5>
-                                        <div className="rate_icon">
-                                            <a href="#"> <i className="fas fa-star"></i> </a>
-                                            <a href="#"> <i className="fas fa-star"></i> </a>
-                                            <a href="#"> <i className="fas fa-star"></i> </a>
-                                            <a href="#"> <i className="fas fa-star"></i> </a>
-                                            <a href="#"> <i className="fas fa-star"></i> </a>
-                                        </div>
-                                        <h6>$150</h6>
-                                        <div className="social_icon">
-                                            <a href="#"><i className="ti-heart"></i></a>
-                                            <a href="#"><i className="ti-bag"></i></a>
-                                        </div>
-                                    </div>
-                                </div>\<div className="single_arrivel_item weidth_1 mix shoes">
-                                    <img src="/assets/img/logo.png" alt="#" />
-                                    <div className="hover_text">
-                                        <p>Canvas</p>
-                                        <h5>Lorem Canvas Low-Top Sneaker</h5>
-                                        <div className="rate_icon">
-                                            <a href="#"> <i className="fas fa-star"></i> </a>
-                                            <a href="#"> <i className="fas fa-star"></i> </a>
-                                            <a href="#"> <i className="fas fa-star"></i> </a>
-                                            <a href="#"> <i className="fas fa-star"></i> </a>
-                                            <a href="#"> <i className="fas fa-star"></i> </a>
-                                        </div>
-                                        <h6>$150</h6>
-                                        <div className="social_icon">
-                                            <a href="#"><i className="ti-heart"></i></a>
-                                            <a href="#"><i className="ti-bag"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="single_arrivel_item weidth_1 mix shoes">
-                                    <img src="/assets/img/logo.png" alt="#" />
-                                    <div className="hover_text">
-                                        <p>Canvas</p>
-                                        <h5>Lorem Canvas Low-Top Sneaker</h5>
-                                        <div className="rate_icon">
-                                            <a href="#"> <i className="fas fa-star"></i> </a>
-                                            <a href="#"> <i className="fas fa-star"></i> </a>
-                                            <a href="#"> <i className="fas fa-star"></i> </a>
-                                            <a href="#"> <i className="fas fa-star"></i> </a>
-                                            <a href="#"> <i className="fas fa-star"></i> </a>
-                                        </div>
-                                        <h6>$150</h6>
-                                        <div className="social_icon">
-                                            <a href="#"><i className="ti-heart"></i></a>
-                                            <a href="#"><i className="ti-bag"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
+                                    ))
+                                }
+
                             </div>
                         </div>
                     </div>
+                </div>
+            </section>
+            <section className="box-shadow mb-3">
+                <div className="row g-0">
+                    <div className="col-12">
+                        <h1 className="gradientThemeColor titleHeading text-center">Our Partners</h1>
+                        <div className="partners-container">
+                            <div className="partner-card ">
+                                <img
+                                    src="/assets/img/partner/partner_1.jpeg"
+                                    alt="Partner 1"
+                                    className="partner-image" />
+                                <h3 className="partner-name">Pooja Srivastava</h3>
+                                <h3 className="partner-name">CO-FOUNDER</h3>
+                                <p className="partner-details">
+                                    Known for their exquisite handloom weaves and sustainable practices across India.
+                                </p>
+                            </div>
+
+                            <div className="partner-card">
+                                <img
+                                    src="/assets/img/partner/partner_2.jpeg"
+                                    alt="Partner 2"
+                                    className="partner-image" />
+                                <h3 className="partner-name">Antara Mukherjee</h3>
+                                <h3 className="partner-name">CO-FOUNDER</h3>
+                                <p className="partner-details">
+                                    Specializing in traditional Chikankari embroidery, handcrafted by skilled artisans.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    {/* <div className="col-6">
+                        <blockquote className="instagram-media" data-instgrm-permalink="https://www.instagram.com/_kamataah_/" data-instgrm-version="14" >
+                        </blockquote>
+                        <script async src="//www.instagram.com/embed.js"></script>
+                    </div> */}
+
                 </div>
             </section>
         </div>

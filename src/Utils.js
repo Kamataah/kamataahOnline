@@ -130,6 +130,101 @@ const apiMethods = [
     { id: 4, name: "PATCH" }
 ]
 
+const productList = [
+    {
+        category: "Saree",
+        name: "Product 1",
+        price: "₹ 100",
+        startRating: 5,
+        image: "/assets/collection/DSC_6929.JPG",
+    },
+    {
+        category: "HandCrafted Saree",
+        name: "Product 1",
+        price: "₹ 100",
+        startRating: 4,
+        image: "/assets/collection/DSC_6950.jpg",
+    },
+    {
+        category: "Handloom Saree",
+        name: "Product 1",
+        price: "₹ 100",
+        startRating: 4,
+        image: "/assets/collection/DSC_6953.JPG",
+    },
+    {
+        category: "Handloom Saree",
+        name: "Product 1",
+        price: "₹ 100",
+        startRating: 3,
+        image: "/assets/collection/DSC_6959.JPG",
+    },
+    {
+        category: "Saree",
+        name: "Product 1",
+        price: "₹ 100",
+        startRating: 5,
+        image: "/assets/collection/DSC_6966.JPG",
+    },
+    {
+        category: "HandCrafted Saree",
+        name: "Product 1",
+        price: "₹ 100",
+        startRating: 4,
+        image: "/assets/collection/DSC_6971.JPG",
+    },
+    {
+        category: "Handloom Saree",
+        name: "Product 1",
+        price: "₹ 100",
+        startRating: 4,
+        image: "/assets/collection/DSC_6982.JPG",
+    },
+    {
+        category: "Handloom Saree",
+        name: "Product 1",
+        price: "₹ 100",
+        startRating: 3,
+        image: "/assets/collection/DSC_6987.JPG",
+    },
+    {
+        category: "Handloom Saree",
+        name: "Product 1",
+        price: "₹ 100",
+        startRating: 3,
+        image: "/assets/collection/DSC_6988.JPG",
+    },
+    {
+        category: "Handloom Saree",
+        name: "Product 1",
+        price: "₹ 100",
+        startRating: 4,
+        image: "/assets/collection/DSC_6992.JPG",
+    },
+    {
+        category: "HandCrafted Saree",
+        name: "Product 1",
+        price: "₹ 100",
+        startRating: 4,
+        image: "/assets/collection/DSC_6998.JPG",
+    },
+    {
+        category: "Handloom Saree",
+        name: "Product 1",
+        price: "₹ 100",
+        startRating: 4,
+        image: "/assets/collection/DSC_7001.JPG",
+    },
+    {
+        category: "Handloom Saree",
+        name: "Product 1",
+        price: "₹ 100",
+        startRating: 3,
+        image: "/assets/collection/DSC_7043.JPG",
+    },
+
+]
+
 
 export {
     loanTypes,
@@ -142,4 +237,5 @@ export {
     convertToPayload,
     getTokenData,
     setTokenData,
+    productList
 }

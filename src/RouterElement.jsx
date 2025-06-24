@@ -5,6 +5,7 @@ import { getKeyForTable } from './Utils';
 import { PageLoader } from './Loader';
 import HomeLayout from './Components/user/layout/HomeLayout';
 const HomePageContent = lazy(() => import('./Components/user/HomePageContent'));
+const PrivacyPolicy = lazy(() => import('./Components/PrivacyPolicy'));
 const PageNotFound = lazy(() => import('./Components/user/PageNotFound'));
 
 function PrivateRoute({ children }) {
@@ -25,6 +26,7 @@ const routes = [
         children: [
             { index: true, element: <HomePageContent /> },
             { path: "/", element: <HomePageContent /> },
+            { path: "/policy", element: <PrivacyPolicy /> },
             { path: "/page", element: <PrivateRoute><PageNotFound /></PrivateRoute> }
         ]
     }

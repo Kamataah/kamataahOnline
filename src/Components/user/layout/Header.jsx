@@ -17,65 +17,24 @@ function Header() {
                             <div className="collapse navbar-collapse main-menu-item" id="navbarSupportedContent">
                                 <ul className="navbar-nav">
                                     <li className="nav-item">
-                                        <a className="nav-link" href="index-2.html">Home</a>
+                                        <Link className="nav-link">Home</Link>
                                     </li>
                                     <li className="nav-item dropdown">
-                                        <a className="nav-link dropdown-toggle" href="blog.html" id="navbarDropdown_1"
-                                            role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <Link className="nav-link dropdown-toggle" id="navbarDropdown_1"
+                                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                             Shop
-                                        </a>
+                                        </Link>
                                         <div className="dropdown-menu" aria-labelledby="navbarDropdown_1">
-                                            <a className="dropdown-item" href="category.html"> shop category</a>
-                                            <a className="dropdown-item" href="single-product.html">product details</a>
+                                            <Link className="dropdown-item" > shop category</Link>
+                                            <Link className="dropdown-item">product details</Link>
 
-                                        </div>
-                                    </li>
-                                    <li className="nav-item dropdown">
-                                        <a className="nav-link dropdown-toggle" href="blog.html" id="navbarDropdown_3"
-                                            role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                            pages
-                                        </a>
-                                        <div className="dropdown-menu" aria-labelledby="navbarDropdown_2">
-                                            <a className="dropdown-item" href="login.html">
-                                                login
-
-                                            </a>
-                                            <a className="dropdown-item" href="tracking.html">tracking</a>
-                                            <a className="dropdown-item" href="checkout.html">product checkout</a>
-                                            <a className="dropdown-item" href="cart.html">shopping cart</a>
-                                            <a className="dropdown-item" href="confirmation.html">confirmation</a>
-                                            <a className="dropdown-item" href="elements.html">elements</a>
-                                        </div>
-                                    </li>
-
-                                    <li className="nav-item dropdown">
-                                        <a className="nav-link dropdown-toggle" href="blog.html" id="navbarDropdown_2"
-                                            role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                            blog
-                                        </a>
-                                        <div className="dropdown-menu" aria-labelledby="navbarDropdown_2">
-                                            <a className="dropdown-item" href="blog.html"> blog</a>
-                                            <a className="dropdown-item" href="single-blog.html">Single blog</a>
                                         </div>
                                     </li>
 
                                     <li className="nav-item">
-                                        <a className="nav-link" href="contact.html">Contact</a>
+                                        <a className="nav-link" href="#footer">Contact</a>
                                     </li>
                                 </ul>
-                            </div>
-                            <div className="hearer_icon d-flex">
-                                <div className="dropdown cart">
-                                    <a className="dropdown-toggle" href="#" id="navbarDropdown3" role="button"
-                                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        <i className="ti-bag"></i>
-                                    </a>
-                                    <div className="dropdown-menu" aria-labelledby="navbarDropdown">
-                                        <div className="single_product">
-
-                                        </div>
-                                    </div>
-                                </div>
                             </div>
                         </nav>
                     </div>
