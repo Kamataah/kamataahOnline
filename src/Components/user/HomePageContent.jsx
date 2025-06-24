@@ -85,7 +85,7 @@ function HomePageContent() {
                             <div className="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-xs-12 d-none">
                                 <select className="form-select" name="" id="">
                                     <option value="">Select Category</option>
-                                    <option value="1">Chinkan kari</option>
+                                    <option value="1">Chikankari</option>
                                     <option value="2">Hadloom Saree</option>
                                     <option value="3">Handcrafted Saree</option>
                                 </select>
@@ -98,8 +98,8 @@ function HomePageContent() {
                                             <div key={arrayIndex('product', index)} className="single_arrivel_item weidth_1 mix shoes">
                                                 <img src={item.image} alt="#" style={{ width: '23em', height: '29em' }} />
                                                 <div className="hover_text">
-                                                    <p>{item.category}</p>
-                                                    <h5>{item.name}</h5>
+                                                    <p>{item.name}</p>
+                                                    <h5>{item.description}</h5>
                                                     <div className="rate_icon">
                                                         {
                                                             Array.from({ length: 5 }, (_, i) => (
