@@ -52,7 +52,7 @@ function HomePageContent() {
                         <div className="row align-items-center justify-content-between">
                             <div className="col-xl-4 col-lg-4 col-md-4 col-sm-12 cl-xs-12 col-12">
                                 <div className="single_feature_post_text">
-                                    <img src="/assets/collection/c_kari.jpeg" alt="#" style={{ height: '507px', width: '429px' }} />
+                                    <img src="/assets/collection/chiken-cat.jpeg" alt="#" style={{ height: '507px', width: '429px' }} />
                                     <div className="hover_text">
                                         <span className="btn_2">Chikankari</span>
                                     </div>
@@ -261,7 +261,7 @@ function HomePageContent() {
 
 
                 </Modal.Body>
-            </Modal>s
+            </Modal>
         </>
     );
 }

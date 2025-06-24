@@ -46,9 +46,9 @@ function Footer() {
                                 </form>
                             </div>
                             <div className="social_icon">
-                                <Link><i className="fa-brands fa-facebook"></i></Link>
-                                <Link><i className="fa-brands fa-whatsapp"></i></Link>
-                                <Link><i className="fa-brands fa-instagram"></i></Link>
+                                <Link target='_blank' to={'https://www.facebook.com/share/1AufZrPw4f/'}><i className="fa-brands fa-facebook"></i></Link>
+                                <Link target='_blank' to={'https://api.whatsapp.com/send/?phone=9670608890&text=Hey%20There&type=phone_number&app_absent=0'}><i className="fa-brands fa-whatsapp"></i></Link>
+                                <Link target='_blank' to={'https://www.instagram.com/_kamataah_/'}><i className="fa-brands fa-instagram" ></i></Link>
                             </div>
                         </div>
                     </div>
@@ -56,7 +56,7 @@ function Footer() {
                 <div className="row justify-content-center">
                     <div className="col-lg-12">
                         <div className="copyright_text text-light @2025">
-                            Copyright of Kamataah
+                            &copy; Kamataah 2025 | All rights reserved. <br />
                         </div>
                     </div>
                 </div>
