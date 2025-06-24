@@ -1,1 +1,0 @@
-import{j as e}from"./index-C4P09KZT.js";function t(){return e.jsxs("div",{style:{marginTop:"5%",textAlign:"center"},children:[e.jsx("h1",{children:"404 - Page Not Found"}),e.jsx("p",{children:"Sorry, the page you are looking for does not exist."})]})}export{t as default};
