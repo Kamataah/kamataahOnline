@@ -47,7 +47,7 @@ function Footer() {
                             </div>
                             <div className="social_icon">
                                 <Link target='_blank' to={'https://www.facebook.com/share/1AufZrPw4f/'}><i className="fa-brands fa-facebook"></i></Link>
-                                <Link target='_blank' to={'https://api.whatsapp.com/send/?phone=9670608890&text=Hey%20There&type=phone_number&app_absent=0'}><i className="fa-brands fa-whatsapp"></i></Link>
+                                <Link target='_blank' to={'https://api.whatsapp.com/send/?phone=+919670608890&text=Hey%20There&type=phone_number&app_absent=0'}><i className="fa-brands fa-whatsapp"></i></Link>
                                 <Link target='_blank' to={'https://www.instagram.com/_kamataah_/'}><i className="fa-brands fa-instagram" ></i></Link>
                             </div>
                         </div>
