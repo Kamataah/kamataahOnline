@@ -17,8 +17,8 @@ function HomePageContent() {
     }
     return (
         <>
-            <div className="main-content row g-0 gap-3 mx-2">
-                <Carousel className="carousel-parent" fade interval={1000} indicators={false}>
+            <div className="main-content row g-0 gap-3">
+                <Carousel className="carousel-parent" fade interval={2000} indicators={false}>
                     <Carousel.Item>
                         <img
                             className="d-block w-100 car_img"
@@ -43,8 +43,8 @@ function HomePageContent() {
                         />
                     </Carousel.Item>
                 </Carousel>
-
-                <section className="feature_part py-4 box-shadow" id="category">
+                <div id="category" className="mt-5"></div>
+                <section className="feature_part py-4 box-shadow">
                     <div className="my-3">
                         <h1 className="gradientThemeColor titleHeading text-center">Our Product Category</h1>
                     </div>
@@ -54,7 +54,7 @@ function HomePageContent() {
                                 <div className="single_feature_post_text">
                                     <img src="/assets/collection/c_kari.jpeg" alt="#" style={{ height: '507px', width: '429px' }} />
                                     <div className="hover_text">
-                                        <span className="btn_2">Chinkan kari</span>
+                                        <span className="btn_2">Chikankari</span>
                                     </div>
                                 </div>
                             </div>
@@ -62,7 +62,7 @@ function HomePageContent() {
                                 <div className="single_feature_post_text">
                                     <img src="/assets/collection/handloom.jpeg" alt="#" style={{ height: '507px', width: '429px' }} />
                                     <div className="hover_text">
-                                        <span className="btn_2">Hadloom Saree</span>
+                                        <span className="btn_2">Kurta</span>
                                     </div>
                                 </div>
                             </div>
@@ -77,7 +77,8 @@ function HomePageContent() {
                         </div>
                     </div>
                 </section>
-                <section className="new_arrival box-shadow my-3" id="products">
+                <div id="products" className="mt-5"></div>
+                <section className="new_arrival box-shadow my-3">
                     <div className="container-fluid">
                         <div className="row">
                             <h1 className="gradientThemeColor titleHeading text-center">Products For You</h1>
@@ -95,7 +96,7 @@ function HomePageContent() {
                                     {
                                         productList.map((item, index) => (
                                             <div key={arrayIndex('product', index)} className="single_arrivel_item weidth_1 mix shoes">
-                                                <img src={item.image} alt="#" style={{ width: '23em', height: '25em' }} />
+                                                <img src={item.image} alt="#" style={{ width: '23em', height: '29em' }} />
                                                 <div className="hover_text">
                                                     <p>{item.category}</p>
                                                     <h5>{item.name}</h5>
@@ -109,7 +110,7 @@ function HomePageContent() {
                                                         }
                                                     </div>
                                                     <h6>{item.price}</h6>
-                                                    <div className="social_icon">
+                                                    <div className="social_icon cart_icon">
                                                         <Link><i className="fas fa-heart"></i></Link>
                                                         <Link><i className="fa-solid fa-cart-shopping"></i></Link>
                                                     </div>
