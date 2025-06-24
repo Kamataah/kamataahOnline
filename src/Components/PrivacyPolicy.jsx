@@ -1,5 +1,10 @@
+import { useEffect } from "react"
+
 
 function PrivacyPolicy() {
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
     return (
         <div className="policy-container">
             <h1>Privacy Policy</h1>

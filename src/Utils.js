@@ -137,6 +137,20 @@ const productList = [
         price: "₹ 100",
         startRating: 5,
         image: "/assets/collection/DSC_6929.JPG",
+        description: "The blouse worn by the model is for styling purposes only. This saree comes with an unstitched blouse piece.",
+        product_details: {
+            Fabric: "Georgette",
+            Fit: "NA",
+            Type: "Craft - Chikankari",
+            Neckline: "NA",
+            Sleeves: "NA",
+            Length: "5.5 Meters X 1.1 Meters",
+            "Unstitched Blouse": "0.8 Meters X 1.1 Meters",
+            Occasion: "Festive",
+            "Product Category": "Womenswear - Saree",
+            "Net Quantity": "1N (Unstitched Blouse included)",
+            "Wash Care": "Dry Clean",
+        }
     },
     {
         category: "HandCrafted Saree",
@@ -144,6 +158,20 @@ const productList = [
         price: "₹ 100",
         startRating: 4,
         image: "/assets/collection/DSC_6950.jpg",
+        description: "The blouse worn by the model is for styling purposes only. This saree comes with an unstitched blouse piece.",
+        product_details: {
+            Fabric: "Georgette",
+            Fit: "NA",
+            Type: "Craft - Chikankari",
+            Neckline: "NA",
+            Sleeves: "NA",
+            Length: "5.5 Meters X 1.1 Meters",
+            "Unstitched Blouse": "0.8 Meters X 1.1 Meters",
+            Occasion: "Festive",
+            "Product Category": "Womenswear - Saree",
+            "Net Quantity": "1N (Unstitched Blouse included)",
+            "Wash Care": "Dry Clean",
+        }
     },
     {
         category: "Handloom Saree",
@@ -151,6 +179,20 @@ const productList = [
         price: "₹ 100",
         startRating: 4,
         image: "/assets/collection/DSC_6953.JPG",
+        description: "The blouse worn by the model is for styling purposes only. This saree comes with an unstitched blouse piece.",
+        product_details: {
+            Fabric: "Georgette",
+            Fit: "NA",
+            Type: "Craft - Chikankari",
+            Neckline: "NA",
+            Sleeves: "NA",
+            Length: "5.5 Meters X 1.1 Meters",
+            "Unstitched Blouse": "0.8 Meters X 1.1 Meters",
+            Occasion: "Festive",
+            "Product Category": "Womenswear - Saree",
+            "Net Quantity": "1N (Unstitched Blouse included)",
+            "Wash Care": "Dry Clean",
+        }
     },
     {
         category: "Handloom Saree",
@@ -158,6 +200,20 @@ const productList = [
         price: "₹ 100",
         startRating: 3,
         image: "/assets/collection/DSC_6959.JPG",
+        description: "The blouse worn by the model is for styling purposes only. This saree comes with an unstitched blouse piece.",
+        product_details: {
+            Fabric: "Georgette",
+            Fit: "NA",
+            Type: "Craft - Chikankari",
+            Neckline: "NA",
+            Sleeves: "NA",
+            Length: "5.5 Meters X 1.1 Meters",
+            "Unstitched Blouse": "0.8 Meters X 1.1 Meters",
+            Occasion: "Festive",
+            "Product Category": "Womenswear - Saree",
+            "Net Quantity": "1N (Unstitched Blouse included)",
+            "Wash Care": "Dry Clean",
+        }
     },
     {
         category: "Saree",
@@ -165,6 +221,20 @@ const productList = [
         price: "₹ 100",
         startRating: 5,
         image: "/assets/collection/DSC_6966.JPG",
+        description: "The blouse worn by the model is for styling purposes only. This saree comes with an unstitched blouse piece.",
+        product_details: {
+            Fabric: "Georgette",
+            Fit: "NA",
+            Type: "Craft - Chikankari",
+            Neckline: "NA",
+            Sleeves: "NA",
+            Length: "5.5 Meters X 1.1 Meters",
+            "Unstitched Blouse": "0.8 Meters X 1.1 Meters",
+            Occasion: "Festive",
+            "Product Category": "Womenswear - Saree",
+            "Net Quantity": "1N (Unstitched Blouse included)",
+            "Wash Care": "Dry Clean",
+        }
     },
     {
         category: "HandCrafted Saree",
@@ -172,6 +242,20 @@ const productList = [
         price: "₹ 100",
         startRating: 4,
         image: "/assets/collection/DSC_6971.JPG",
+        description: "The blouse worn by the model is for styling purposes only. This saree comes with an unstitched blouse piece.",
+        product_details: {
+            Fabric: "Georgette",
+            Fit: "NA",
+            Type: "Craft - Chikankari",
+            Neckline: "NA",
+            Sleeves: "NA",
+            Length: "5.5 Meters X 1.1 Meters",
+            "Unstitched Blouse": "0.8 Meters X 1.1 Meters",
+            Occasion: "Festive",
+            "Product Category": "Womenswear - Saree",
+            "Net Quantity": "1N (Unstitched Blouse included)",
+            "Wash Care": "Dry Clean",
+        }
     },
     {
         category: "Handloom Saree",
@@ -179,6 +263,20 @@ const productList = [
         price: "₹ 100",
         startRating: 4,
         image: "/assets/collection/DSC_6982.JPG",
+        description: "The blouse worn by the model is for styling purposes only. This saree comes with an unstitched blouse piece.",
+        product_details: {
+            Fabric: "Georgette",
+            Fit: "NA",
+            Type: "Craft - Chikankari",
+            Neckline: "NA",
+            Sleeves: "NA",
+            Length: "5.5 Meters X 1.1 Meters",
+            "Unstitched Blouse": "0.8 Meters X 1.1 Meters",
+            Occasion: "Festive",
+            "Product Category": "Womenswear - Saree",
+            "Net Quantity": "1N (Unstitched Blouse included)",
+            "Wash Care": "Dry Clean",
+        }
     },
     {
         category: "Handloom Saree",
@@ -186,6 +284,20 @@ const productList = [
         price: "₹ 100",
         startRating: 3,
         image: "/assets/collection/DSC_6987.JPG",
+        description: "The blouse worn by the model is for styling purposes only. This saree comes with an unstitched blouse piece.",
+        product_details: {
+            Fabric: "Georgette",
+            Fit: "NA",
+            Type: "Craft - Chikankari",
+            Neckline: "NA",
+            Sleeves: "NA",
+            Length: "5.5 Meters X 1.1 Meters",
+            "Unstitched Blouse": "0.8 Meters X 1.1 Meters",
+            Occasion: "Festive",
+            "Product Category": "Womenswear - Saree",
+            "Net Quantity": "1N (Unstitched Blouse included)",
+            "Wash Care": "Dry Clean",
+        }
     },
     {
         category: "Handloom Saree",
@@ -193,6 +305,20 @@ const productList = [
         price: "₹ 100",
         startRating: 3,
         image: "/assets/collection/DSC_6988.JPG",
+        description: "The blouse worn by the model is for styling purposes only. This saree comes with an unstitched blouse piece.",
+        product_details: {
+            Fabric: "Georgette",
+            Fit: "NA",
+            Type: "Craft - Chikankari",
+            Neckline: "NA",
+            Sleeves: "NA",
+            Length: "5.5 Meters X 1.1 Meters",
+            "Unstitched Blouse": "0.8 Meters X 1.1 Meters",
+            Occasion: "Festive",
+            "Product Category": "Womenswear - Saree",
+            "Net Quantity": "1N (Unstitched Blouse included)",
+            "Wash Care": "Dry Clean",
+        }
     },
     {
         category: "Handloom Saree",
@@ -200,6 +326,20 @@ const productList = [
         price: "₹ 100",
         startRating: 4,
         image: "/assets/collection/DSC_6992.JPG",
+        description: "The blouse worn by the model is for styling purposes only. This saree comes with an unstitched blouse piece.",
+        product_details: {
+            Fabric: "Georgette",
+            Fit: "NA",
+            Type: "Craft - Chikankari",
+            Neckline: "NA",
+            Sleeves: "NA",
+            Length: "5.5 Meters X 1.1 Meters",
+            "Unstitched Blouse": "0.8 Meters X 1.1 Meters",
+            Occasion: "Festive",
+            "Product Category": "Womenswear - Saree",
+            "Net Quantity": "1N (Unstitched Blouse included)",
+            "Wash Care": "Dry Clean",
+        }
     },
     {
         category: "HandCrafted Saree",
@@ -207,6 +347,20 @@ const productList = [
         price: "₹ 100",
         startRating: 4,
         image: "/assets/collection/DSC_6998.JPG",
+        description: "The blouse worn by the model is for styling purposes only. This saree comes with an unstitched blouse piece.",
+        product_details: {
+            Fabric: "Georgette",
+            Fit: "NA",
+            Type: "Craft - Chikankari",
+            Neckline: "NA",
+            Sleeves: "NA",
+            Length: "5.5 Meters X 1.1 Meters",
+            "Unstitched Blouse": "0.8 Meters X 1.1 Meters",
+            Occasion: "Festive",
+            "Product Category": "Womenswear - Saree",
+            "Net Quantity": "1N (Unstitched Blouse included)",
+            "Wash Care": "Dry Clean",
+        }
     },
     {
         category: "Handloom Saree",
@@ -214,6 +368,20 @@ const productList = [
         price: "₹ 100",
         startRating: 4,
         image: "/assets/collection/DSC_7001.JPG",
+        description: "The blouse worn by the model is for styling purposes only. This saree comes with an unstitched blouse piece.",
+        product_details: {
+            Fabric: "Georgette",
+            Fit: "NA",
+            Type: "Craft - Chikankari",
+            Neckline: "NA",
+            Sleeves: "NA",
+            Length: "5.5 Meters X 1.1 Meters",
+            "Unstitched Blouse": "0.8 Meters X 1.1 Meters",
+            Occasion: "Festive",
+            "Product Category": "Womenswear - Saree",
+            "Net Quantity": "1N (Unstitched Blouse included)",
+            "Wash Care": "Dry Clean",
+        }
     },
     {
         category: "Handloom Saree",
@@ -221,9 +389,40 @@ const productList = [
         price: "₹ 100",
         startRating: 3,
         image: "/assets/collection/DSC_7043.JPG",
+        description: "The blouse worn by the model is for styling purposes only. This saree comes with an unstitched blouse piece.",
+        product_details: {
+            Fabric: "Georgette",
+            Fit: "NA",
+            Type: "Craft - Chikankari",
+            Neckline: "NA",
+            Sleeves: "NA",
+            Length: "5.5 Meters X 1.1 Meters",
+            "Unstitched Blouse": "0.8 Meters X 1.1 Meters",
+            Occasion: "Festive",
+            "Product Category": "Womenswear - Saree",
+            "Net Quantity": "1N (Unstitched Blouse included)",
+            "Wash Care": "Dry Clean",
+        }
     },
 
 ]
+
+const scrollToTop = () => {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth' // for smooth scrolling
+    });
+};
+
+const scrollToElement = (targetElement) => {
+    const element = document.getElementById(targetElement);  // Get the element by ID
+    if (element) {
+        element.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start', // scrolls to the top of the element
+        });
+    }
+}
 
 
 export {
@@ -237,5 +436,8 @@ export {
     convertToPayload,
     getTokenData,
     setTokenData,
-    productList
+    productList,
+    scrollToTop,
+    scrollToElement
 }
+

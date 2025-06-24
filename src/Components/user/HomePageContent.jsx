@@ -1,78 +1,50 @@
 import { Link } from "react-router-dom";
 import React, { useState, useEffect } from 'react';
 import { arrayIndex, productList } from "../../Utils";
-import Button from 'react-bootstrap/Button';
-import Modal from 'react-bootstrap/Modal';
+// import Button from 'react-bootstrap/Button';
+// import Modal from 'react-bootstrap/Modal';
+import { Modal, Button, Card, Carousel } from 'react-bootstrap';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
-function MyVerticallyCenteredModal(props) {
-    return (
-        <>
-            <Button variant="primary" onClick={() => setShow(true)}>
-                Custom Width Modal
-            </Button>
-
-            <Modal
-                show={show}
-                onHide={() => setShow(false)}
-                dialogClassName="modal-90w"
-                aria-labelledby="example-custom-modal-styling-title"
-            >
-                <Modal.Header closeButton>
-                    <Modal.Title id="example-custom-modal-styling-title">
-                        Custom Modal Styling
-                    </Modal.Title>
-                </Modal.Header>
-                <Modal.Body>
-                    <p>
-                        Ipsum molestiae natus adipisci modi eligendi? Debitis amet quae unde
-                        commodi aspernatur enim, consectetur. Cumque deleniti temporibus
-                        ipsam atque a dolores quisquam quisquam adipisci possimus
-                        laboriosam. Quibusdam facilis doloribus debitis! Sit quasi quod
-                        accusamus eos quod. Ab quos consequuntur eaque quo rem! Mollitia
-                        reiciendis porro quo magni incidunt dolore amet atque facilis ipsum
-                        deleniti rem!
-                    </p>
-                </Modal.Body>
-            </Modal>
-        </>
-    );
-}
 
 function HomePageContent() {
     const [show, setShow] = useState(false);
+    const [selectedProduct, setSelectedProduct] = useState({ name: '', image: '', price: '', startRating: 0, product_details: {} });
+
+    function setShowModal(item) {
+        setShow(true);
+        setSelectedProduct({ ...selectedProduct, ...item });
+    }
     return (
         <>
             <div className="main-content row g-0 gap-3 mx-2">
-                <div className="my-3 welcome_title">
-                    <h1>Welcome To,</h1>
-                    <h1>Kamataah Desirable drapes</h1>
-                </div>
-                <section className="">
-                    <div className="container">
-                        <div className="row align-items-center">
-                            <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12 col-12">
-                                <div className="intro-section">
-                                    <h1>Welcome to Our Handcrafted Heritage Store</h1>
-                                    <p>
-                                        Discover the timeless elegance of <span>Chikankari artistry</span> and the rich tradition of <span>handloom sarees</span>. We take pride in offering a curated collection of <span>handcrafted and handwoven products</span>, celebrating the skills of Indian artisans. Each piece in our collection reflects authenticity, craftsmanship, and cultural heritage — perfect for those who value quality and tradition.
-                                    </p>
-                                </div>
-                            </div>
-                            <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12 col-12 banner_part">
-                                <div className="banner_slider">
-                                    <div className="single_banner_slider">
-                                        <div className="banner_text">
-                                            <div className="banner_text_iner">
+                <Carousel className="carousel-parent" fade interval={1000} indicators={false}>
+                    <Carousel.Item>
+                        <img
+                            className="d-block w-100 car_img"
+                            src="public/assets/collection/banner1.jpeg"
+                            alt="First slide"
+                        />
+                    </Carousel.Item>
 
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <section className="feature_part py-4 box-shadow">
+                    <Carousel.Item>
+                        <img
+                            className="d-block w-100 car_img"
+                            src="public/assets/collection/banner2.jpeg"
+                            alt="Second slide"
+                        />
+                    </Carousel.Item>
+
+                    <Carousel.Item>
+                        <img
+                            className="d-block w-100 car_img"
+                            src="public/assets/collection/banner3.jpeg"
+                            alt="Third slide"
+                        />
+                    </Carousel.Item>
+                </Carousel>
+
+                <section className="feature_part py-4 box-shadow" id="category">
                     <div className="my-3">
                         <h1 className="gradientThemeColor titleHeading text-center">Our Product Category</h1>
                     </div>
@@ -105,7 +77,7 @@ function HomePageContent() {
                         </div>
                     </div>
                 </section>
-                <section className="new_arrival box-shadow my-3">
+                <section className="new_arrival box-shadow my-3" id="products">
                     <div className="container-fluid">
                         <div className="row">
                             <h1 className="gradientThemeColor titleHeading text-center">Products For You</h1>
@@ -142,9 +114,9 @@ function HomePageContent() {
                                                         <Link><i className="fa-solid fa-cart-shopping"></i></Link>
                                                     </div>
 
-                                                    <Button variant="primary" onClick={() => setShow(true)}>
-                                                        Custom Width Modal
-                                                    </Button>
+                                                    <button className="btn btn-outline-light mt-2" onClick={() => setShowModal(item)}>
+                                                        Quick View
+                                                    </button>
                                                 </div>
                                             </div>
                                         ))
@@ -156,6 +128,39 @@ function HomePageContent() {
 
                     </div>
                 </section>
+
+                <div id="about" className="mb-5"></div>
+                <div className="my-3 welcome_title">
+                    <h1>Welcome To,</h1>
+                    <h1>Kamataah Desirable drapes</h1>
+                </div>
+                <section className="" >
+                    <div className="container">
+                        <div className="row align-items-center">
+                            <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12 col-12">
+                                <div className="intro-section">
+                                    <h1>Welcome to Our Handcrafted Heritage Store</h1>
+                                    <p>
+                                        Discover the timeless elegance of <span>Chikankari artistry</span> and the rich tradition of <span>handloom sarees</span>. We take pride in offering a curated collection of <span>handcrafted and handwoven products</span>, celebrating the skills of Indian artisans. Each piece in our collection reflects authenticity, craftsmanship, and cultural heritage — perfect for those who value quality and tradition.
+                                    </p>
+                                </div>
+                            </div>
+                            <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12 col-12 banner_part">
+                                <div className="banner_slider">
+                                    <div className="single_banner_slider">
+                                        <div className="banner_text">
+                                            <div className="banner_text_iner">
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+
                 <section className="box-shadow mb-3">
                     <div className="row g-0">
                         <div className="col-12">
@@ -198,29 +203,65 @@ function HomePageContent() {
 
             </div>
 
-            <Modal
-                show={show}
-                onHide={() => setShow(false)}
-                dialogClassName="modal-90w"
-                aria-labelledby="example-custom-modal-styling-title"
-            >
+            <Modal size="lg" show={show} onHide={() => setShow(false)} dialogClassName="modal-90w"
+                aria-labelledby="product-modal" >
                 <Modal.Header closeButton>
-                    <Modal.Title id="example-custom-modal-styling-title">
-                        Custom Modal Styling
+                    <Modal.Title id="product-modal">
+                        {selectedProduct.name}
                     </Modal.Title>
                 </Modal.Header>
+
                 <Modal.Body>
-                    <p>
-                        Ipsum molestiae natus adipisci modi eligendi? Debitis amet quae unde
-                        commodi aspernatur enim, consectetur. Cumque deleniti temporibus
-                        ipsam atque a dolores quisquam quisquam adipisci possimus
-                        laboriosam. Quibusdam facilis doloribus debitis! Sit quasi quod
-                        accusamus eos quod. Ab quos consequuntur eaque quo rem! Mollitia
-                        reiciendis porro quo magni incidunt dolore amet atque facilis ipsum
-                        deleniti rem!
-                    </p>
+                    {/* Image + Summary Section */}
+                    <div className="d-flex flex-column flex-md-row align-items-start mb-4">
+                        {/* Product Image */}
+                        <div className="me-md-4 mb-3 mb-md-0">
+                            <img
+                                src={selectedProduct.image}
+                                alt="Georgette Saree"
+                                style={{ width: '300px', maxWidth: '100%', height: 'auto', borderRadius: '8px' }}
+                            />
+                        </div>
+
+                        {/* Product Info */}
+                        <div>
+                            <h5 className="mb-2 text-success">
+                                {selectedProduct.name}
+                            </h5>
+                            <p><strong>Sale Price:</strong> {selectedProduct.price}</p>
+                            <p><strong>Regular Price:</strong> <del>{selectedProduct.price}</del></p>
+
+                            <div className="d-flex flex-wrap gap-2 mt-3">
+                                <Button variant="primary">Add to Cart</Button>
+                                <Button variant="success">Buy It Now</Button>
+                                <Button variant="outline-secondary">Add to Wishlist</Button>
+                            </div>
+                            <div>
+                                {/* All Product Details in One Card */}
+                                <Card className="mt-4">
+                                    <Card.Body>
+                                        <Card.Title>Product Details</Card.Title>
+                                        <ul className="list-unstyled mb-3 justify-content-between">
+                                            {Object.keys(selectedProduct?.product_details)?.map((key, index) => (
+                                                <li key={arrayIndex('sub', index)}><strong>{key}</strong> :{selectedProduct.product_details[key]}</li>
+                                            ))}
+                                        </ul>
+
+                                        <p className="text-muted small mb-1">
+                                            {selectedProduct.description}
+                                        </p>
+                                        <p className="text-muted small">
+                                            <strong>Disclaimer:</strong> There might be a slight variation in the actual color of the product due to different screen resolutions.
+                                        </p>
+                                    </Card.Body>
+                                </Card>
+                            </div>
+                        </div>
+                    </div>
+
+
                 </Modal.Body>
-            </Modal>
+            </Modal>s
         </>
     );
 }
