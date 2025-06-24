@@ -22,7 +22,7 @@ function HomePageContent() {
                     <Carousel.Item>
                         <img
                             className="d-block w-100 car_img"
-                            src="public/assets/collection/banner1.jpeg"
+                            src="/assets/collection/banner1.jpeg"
                             alt="First slide"
                         />
                     </Carousel.Item>
@@ -30,7 +30,7 @@ function HomePageContent() {
                     <Carousel.Item>
                         <img
                             className="d-block w-100 car_img"
-                            src="public/assets/collection/banner2.jpeg"
+                            src="/assets/collection/banner2.jpeg"
                             alt="Second slide"
                         />
                     </Carousel.Item>
@@ -38,7 +38,7 @@ function HomePageContent() {
                     <Carousel.Item>
                         <img
                             className="d-block w-100 car_img"
-                            src="public/assets/collection/banner3.jpeg"
+                            src="/assets/collection/banner3.jpeg"
                             alt="Third slide"
                         />
                     </Carousel.Item>
@@ -131,8 +131,7 @@ function HomePageContent() {
 
                 <div id="about" className="mb-5"></div>
                 <div className="my-3 welcome_title">
-                    <h1>Welcome To,</h1>
-                    <h1>Kamataah Desirable drapes</h1>
+                    <h1>About Us</h1>
                 </div>
                 <section className="" >
                     <div className="container">
