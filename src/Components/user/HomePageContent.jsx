@@ -228,8 +228,8 @@ function HomePageContent() {
                             <h5 className="mb-2 text-success">
                                 {selectedProduct.name}
                             </h5>
-                            <p><strong>Sale Price:</strong> {selectedProduct.price}</p>
-                            <p><strong>Regular Price:</strong> <del>{selectedProduct.price}</del></p>
+                            <p><strong>Price:</strong> {selectedProduct.price}</p>
+                            {/* <p><strong>Regular Price:</strong> <del>{selectedProduct.price}</del></p> */}
 
                             <div className="d-flex flex-wrap gap-2 mt-3">
                                 <Button variant="primary">Add to Cart</Button>
