@@ -281,7 +281,7 @@ const productList = [
     {
         category: "kurta",
         name: "Pure silk organza kurta",
-        price: "₹ 100",
+        price: "₹ 7500",
         startRating: 4,
         image: "/assets/collection/DSC_6992.JPG",
         description: "Pure silk organza kurta and dupatta set in unstitched material. Comes with a lining fabric.",
@@ -302,7 +302,7 @@ const productList = [
     {
         category: "kurta",
         name: "Exquisite jaal embroidered kurta",
-        price: "₹ 100",
+        price: "₹ 7500",
         startRating: 4,
         image: "/assets/collection/DSC_6998.JPG",
         description: "Exquisite jaal embroidered kurta piece and dupatta in chanderi silk.",

@@ -62,13 +62,13 @@ function HomePageContent() {
                                 <div className="single_feature_post_text">
                                     <img src="/assets/collection/handloom.jpeg" alt="#" style={{ height: '507px', width: '429px' }} />
                                     <div className="hover_text">
-                                        <span className="btn_2">Kurta</span>
+                                        <span className="btn_2">Handloom Saree</span>
                                     </div>
                                 </div>
                             </div>
                             <div className="col-xl-4 col-lg-4 col-md-4 col-sm-12 cl-xs-12 col-12">
                                 <div className="single_feature_post_text">
-                                    <img src="/assets/collection/handcraeft.jpg" alt="#" style={{ height: '507px', width: '429px' }} />
+                                    <img src="/assets/collection/handcrafted.jpeg" alt="#" style={{ height: '507px', width: '429px' }} />
                                     <div className="hover_text">
                                         <span className="btn_2">Handcrafted Saree</span>
                                     </div>
