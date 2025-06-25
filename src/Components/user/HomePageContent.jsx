@@ -22,31 +22,34 @@ function HomePageContent() {
                     <Carousel.Item>
                         <img
                             className="d-block w-100 car_img"
-                            src="/assets/collection/banner1.jpeg"
-                            alt="First slide"
+                            src="/assets/collection/banner3.jpeg"
+                            alt="Third slide"
                         />
+                    </Carousel.Item>
+                    <Carousel.Item>
+                        <img className="d-block w-100 car_img" src="/assets/collection/banner1.jpeg"
+                            alt="First slide" />
                     </Carousel.Item>
 
                     <Carousel.Item>
+                        <img
+                            className="d-block w-100 car_img"
+                            src="/assets/collection/banner4.jpg"
+                            alt="Second slide"
+                        />
+                    </Carousel.Item>
+                    {/* <Carousel.Item>
                         <img
                             className="d-block w-100 car_img"
                             src="/assets/collection/banner2.jpeg"
                             alt="Second slide"
                         />
-                    </Carousel.Item>
-
-                    <Carousel.Item>
-                        <img
-                            className="d-block w-100 car_img"
-                            src="/assets/collection/banner3.jpeg"
-                            alt="Third slide"
-                        />
-                    </Carousel.Item>
+                    </Carousel.Item> */}
                 </Carousel>
                 <div id="category" className="mt-5"></div>
                 <section className="feature_part py-4 box-shadow">
                     <div className="my-3">
-                        <h1 className="gradientThemeColor titleHeading text-center">Our Product Category</h1>
+                        <h1 className="gradientThemeColor titleHeading text-center">Product Category</h1>
                     </div>
                     <div className="container-fluid p-lg-0 overflow-hidden">
                         <div className="row align-items-center justify-content-between">
@@ -131,8 +134,8 @@ function HomePageContent() {
                 </section>
 
                 <div id="about" className="mb-5"></div>
-                <div className="my-3 welcome_title">
-                    <h1>About Us</h1>
+                <div className="my-3">
+                    <h1 className="gradientThemeColor titleHeading text-center">About Us</h1>
                 </div>
                 <section className="" >
                     <div className="container">
@@ -164,7 +167,7 @@ function HomePageContent() {
                 <section className="box-shadow mb-3">
                     <div className="row g-0">
                         <div className="col-12">
-                            <h1 className="gradientThemeColor titleHeading text-center">Our Partners</h1>
+                            <h1 className="gradientThemeColor titleHeading text-center">Our Team</h1>
                             <div className="partners-container">
                                 <div className="partner-card ">
                                     <img

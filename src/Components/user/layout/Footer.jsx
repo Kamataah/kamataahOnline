@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import { scrollToElement } from '../../../Utils'
 
 function Footer() {
     return (
@@ -18,7 +19,7 @@ function Footer() {
                         <div className="single_footer_part">
                             <h4>Company</h4>
                             <ul className="list-unstyled">
-                                <li><Link>About</Link></li>
+                                <li><Link onClick={() => { scrollToElement('about') }}>About</Link></li>
                                 <li><Link to={"/policy"}>Policy</Link></li>
                                 <li><Link>Contact</Link></li>
                             </ul>
@@ -29,7 +30,7 @@ function Footer() {
                             <h4>Address</h4>
                             <ul className="list-unstyled">
                                 <li><span className='text-light'>E3/21, Shirine Garden,Aundh,Pune</span></li>
-                                <li><span className='text-light'>+91-9670608890</span></li>
+                                <li><span className='text-light'>+91-9172197805</span></li>
                             </ul>
                         </div>
                     </div>
@@ -47,7 +48,7 @@ function Footer() {
                             </div>
                             <div className="social_icon">
                                 <Link target='_blank' to={'https://www.facebook.com/share/1AufZrPw4f/'}><i className="fa-brands fa-facebook"></i></Link>
-                                <Link target='_blank' to={'https://api.whatsapp.com/send/?phone=+919670608890&text=Hey%20There&type=phone_number&app_absent=0'}><i className="fa-brands fa-whatsapp"></i></Link>
+                                <Link target='_blank' to={'https://api.whatsapp.com/send/?phone=+919172197805&text=Hey%20There&type=phone_number&app_absent=0'}><i className="fa-brands fa-whatsapp"></i></Link>
                                 <Link target='_blank' to={'https://www.instagram.com/_kamataah_/'}><i className="fa-brands fa-instagram" ></i></Link>
                             </div>
                         </div>
