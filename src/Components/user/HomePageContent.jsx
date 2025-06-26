@@ -176,7 +176,7 @@ function HomePageContent() {
                                         className="partner-image" />
                                     <h3 className="partner-name">Pooja Srivastava</h3>
                                     <h3 className="partner-name">CO-FOUNDER</h3>
-                                    <p className="partner-details">
+                                    <p className="partner-details d-none">
                                         Specializing in traditional Chikankari embroidery, handcrafted by skilled artisans.
                                     </p>
                                 </div>
@@ -188,7 +188,7 @@ function HomePageContent() {
                                         className="partner-image" />
                                     <h3 className="partner-name">Antara Mukherjee</h3>
                                     <h3 className="partner-name">CO-FOUNDER</h3>
-                                    <p className="partner-details">
+                                    <p className="partner-details d-none">
                                         Known for their exquisite handloom weaves and sustainable practices across India.
                                     </p>
                                 </div>

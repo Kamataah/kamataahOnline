@@ -54,7 +54,7 @@ function PrivacyPolicy() {
             <h2>8. Contact Us</h2>
             <p>If you have any questions about this Privacy Policy, please contact us at:</p>
             <p><strong>Email:</strong> kamataahonline@gmail.com</p>
-            <p><strong>Phone:</strong> +91-9670608890</p>
+            <p><strong>Phone:</strong> +91-9172197805</p>
 
             <p>Thank you for shopping with <strong>Kamataah</strong>.</p>
         </div>
